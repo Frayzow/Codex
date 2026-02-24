@@ -1,0 +1,232 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..023f80e2a5e00c84588a030b6f2b784623a902f4
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,222 @@
++<!DOCTYPE html>
++<html lang="pt-BR">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Prime Eventos | Organização de Eventos Corporativos e Sociais</title>
++    <meta
++      name="description"
++      content="A Prime Eventos cria experiências memoráveis com planejamento completo para eventos corporativos, sociais e culturais. Solicite um orçamento."
++    />
++    <meta
++      name="keywords"
++      content="eventos, assessoria de eventos, eventos corporativos, casamentos, festas, produção de eventos"
++    />
++    <meta name="author" content="Prime Eventos" />
++    <meta property="og:title" content="Prime Eventos | Experiências que marcam" />
++    <meta
++      property="og:description"
++      content="Conheça nossos serviços, portfólio e solicite um orçamento para o seu próximo evento."
++    />
++    <meta property="og:type" content="website" />
++    <meta property="og:locale" content="pt_BR" />
++    <meta name="theme-color" content="#1f4ed8" />
++    <link rel="canonical" href="https://primeeventos.com.br/" />
++    <link rel="preconnect" href="https://images.unsplash.com" />
++    <link rel="stylesheet" href="styles.css" />
++    <script type="application/ld+json">
++      {
++        "@context": "https://schema.org",
++        "@type": "ProfessionalService",
++        "name": "Prime Eventos",
++        "description": "Empresa especializada em planejamento e execução de eventos.",
++        "telephone": "+55 11 99999-0000",
++        "email": "contato@primeeventos.com.br",
++        "address": {
++          "@type": "PostalAddress",
++          "streetAddress": "Av. Paulista, 1200",
++          "addressLocality": "São Paulo",
++          "addressRegion": "SP",
++          "postalCode": "01310-100",
++          "addressCountry": "BR"
++        }
++      }
++    </script>
++  </head>
++  <body>
++    <header class="header" id="topo">
++      <div class="container nav-wrap">
++        <a href="#topo" class="logo" aria-label="Prime Eventos - início">Prime<span>Eventos</span></a>
++        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
++        <nav class="nav" aria-label="Navegação principal">
++          <a href="#inicio">Início</a>
++          <a href="#servicos">Serviços</a>
++          <a href="#portfolio">Portfólio</a>
++          <a href="#sobre">Sobre Nós</a>
++          <a href="#depoimentos">Depoimentos</a>
++          <a href="#contato" class="btn-nav">Contato</a>
++        </nav>
++      </div>
++    </header>
++
++    <main>
++      <section class="hero" id="inicio">
++        <div class="container hero-grid">
++          <div>
++            <p class="tag">Planejamento e produção de eventos</p>
++            <h1>Transformamos ideias em eventos inesquecíveis</h1>
++            <p>
++              Atuamos do conceito à execução com criatividade, organização e foco em resultados.
++              Da reunião corporativa ao grande lançamento, seu evento está em boas mãos.
++            </p>
++            <div class="hero-actions">
++              <a class="btn primary" href="#contato">Solicitar orçamento</a>
++              <a class="btn ghost" href="#portfolio">Ver portfólio</a>
++            </div>
++          </div>
++          <aside class="hero-card" aria-label="Destaques da empresa">
++            <h2>Por que escolher a Prime?</h2>
++            <ul>
++              <li>+150 eventos realizados com excelência</li>
++              <li>Equipe especializada em experiência do público</li>
++              <li>Gestão completa com fornecedores homologados</li>
++            </ul>
++          </aside>
++        </div>
++      </section>
++
++      <section class="section" id="servicos">
++        <div class="container">
++          <h2>Serviços</h2>
++          <p class="section-intro">
++            Soluções completas para diferentes tipos de eventos, com planejamento estratégico,
++            logística e acompanhamento em tempo real.
++          </p>
++          <div class="cards">
++            <article class="card">
++              <h3>Eventos Corporativos</h3>
++              <p>Convenções, treinamentos, feiras e lançamentos com foco em branding e networking.</p>
++            </article>
++            <article class="card">
++              <h3>Eventos Sociais</h3>
++              <p>Casamentos, aniversários e celebrações personalizadas para criar memórias únicas.</p>
++            </article>
++            <article class="card">
++              <h3>Produção Cultural</h3>
++              <p>Festivais, shows e ativações com curadoria criativa e execução técnica de alto nível.</p>
++            </article>
++            <article class="card">
++              <h3>Assessoria Completa</h3>
++              <p>Orçamento, cronograma, fornecedores, cerimonial e gestão de riscos em um só lugar.</p>
++            </article>
++          </div>
++        </div>
++      </section>
++
++      <section class="section muted" id="portfolio">
++        <div class="container">
++          <h2>Portfólio de Eventos</h2>
++          <p class="section-intro">Alguns dos projetos que entregamos com excelência para nossos clientes.</p>
++          <div class="gallery">
++            <figure>
++              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80" alt="Evento corporativo com palco e auditório" loading="lazy" />
++              <figcaption>Convenção anual de tecnologia</figcaption>
++            </figure>
++            <figure>
++              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Casamento ao ar livre com decoração elegante" loading="lazy" />
++              <figcaption>Casamento ao pôr do sol</figcaption>
++            </figure>
++            <figure>
++              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Show com iluminação de palco e público" loading="lazy" />
++              <figcaption>Festival cultural urbano</figcaption>
++            </figure>
++          </div>
++        </div>
++      </section>
++
++      <section class="section" id="sobre">
++        <div class="container about-grid">
++          <div>
++            <h2>Sobre Nós</h2>
++            <p>
++              Fundada em 2016, a Prime Eventos nasceu para oferecer experiências com propósito.
++              Nossa missão é conectar marcas e pessoas por meio de eventos que emocionam e geram resultados.
++            </p>
++            <p>
++              Trabalhamos com transparência, inovação e atenção aos detalhes. Cada projeto recebe um
++              plano personalizado para garantir qualidade, pontualidade e impacto positivo.
++            </p>
++          </div>
++          <div class="values">
++            <h3>Nossos pilares</h3>
++            <ul>
++              <li>Excelência operacional</li>
++              <li>Criatividade aplicada ao negócio</li>
++              <li>Compromisso com o cliente</li>
++              <li>Sustentabilidade e responsabilidade</li>
++            </ul>
++          </div>
++        </div>
++      </section>
++
++      <section class="section muted" id="depoimentos">
++        <div class="container">
++          <h2>Depoimentos de Clientes</h2>
++          <div class="testimonials">
++            <blockquote>
++              “A Prime superou todas as expectativas no lançamento da nossa marca. Organização impecável!”
++              <cite>— Camila Ferreira, Diretora de Marketing</cite>
++            </blockquote>
++            <blockquote>
++              “Profissionalismo e criatividade do início ao fim. Nosso evento foi um sucesso absoluto.”
++              <cite>— Rafael Gomes, CEO</cite>
++            </blockquote>
++          </div>
++        </div>
++      </section>
++
++      <section class="section" id="contato">
++        <div class="container contact-grid">
++          <div>
++            <h2>Contato</h2>
++            <p>Fale com nossa equipe e receba uma proposta personalizada para o seu evento.</p>
++            <ul class="contact-list">
++              <li><strong>Telefone:</strong> (11) 99999-0000</li>
++              <li><strong>E-mail:</strong> contato@primeeventos.com.br</li>
++              <li><strong>Endereço:</strong> Av. Paulista, 1200 - São Paulo/SP</li>
++            </ul>
++          </div>
++          <form class="contact-form" aria-label="Formulário de contato">
++            <label for="nome">Nome</label>
++            <input id="nome" name="nome" type="text" required />
++
++            <label for="email">E-mail</label>
++            <input id="email" name="email" type="email" required />
++
++            <label for="tipo">Tipo de evento</label>
++            <select id="tipo" name="tipo" required>
++              <option value="">Selecione</option>
++              <option>Corporativo</option>
++              <option>Social</option>
++              <option>Cultural</option>
++            </select>
++
++            <label for="mensagem">Mensagem</label>
++            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
++
++            <button type="submit" class="btn primary">Enviar mensagem</button>
++            <p class="form-feedback" role="status" aria-live="polite"></p>
++          </form>
++        </div>
++      </section>
++    </main>
++
++    <footer class="footer">
++      <div class="container">
++        <p>© <span id="year"></span> Prime Eventos. Todos os direitos reservados.</p>
++      </div>
++    </footer>
++
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
